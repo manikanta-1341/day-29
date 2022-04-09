@@ -9,7 +9,7 @@ export default function App(){
     console.log("initial::",location.state)
     const [state, setState] = useState(location.state)
     // if(location.state===true){
-    //     setState(location.state)
+    //     setState(!location.state)
     // }
     // else{
     //     setState(!location.state) 
@@ -22,7 +22,7 @@ export default function App(){
             </div>
             <div className="right_container">
             <Navbar/>
-            {state?<Dashboard/>:<Button_page/>}
+            {state==true?<Dashboard/>:<Button_page/>}
             </div>
         </div>
             
