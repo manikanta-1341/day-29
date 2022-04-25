@@ -18,11 +18,11 @@ export default function App(){
         <>
         <div className="main_div">
             <div className="left_container">
-            <Side_bar/>
+                <Side_bar/>
             </div>
             <div className="right_container">
-            <Navbar/>
-            {state==true?<Dashboard/>:<Button_page/>}
+                <Navbar/>
+                <Dashboard/> 
             </div>
         </div>
             

@@ -4,11 +4,22 @@
 .side_bar_div{
   background-color: #4e73df;
   width:225px;
-  height:100%
+  height:100%;
+  min-height:663px;
 }
 .side_bar_div>ul{
   padding:2px;
-  margin:0px;
+  margin-left:5px;
+}
+.side_bar_div i{
+  margin-right:10px;
+  color: rgba(255,255,255,.3);
+}
+.side_bar_div button:hover{
+  color:#f8f9fc;
+}
+.side_bar_div li{
+  margin-bottom:25px;
 }
 .sb_admin_li{
   display:flex;
@@ -38,16 +49,22 @@
   font-weight: 600;
   font-size:.65rem;
 }
-.comp_div,.utility_div{
+.comp_div,.utility_div,.pages_div{
   padding:1px 20px 1px 6px;
   margin:1rem 0;
   
+}
+.pages_div a{
+  color:black;
+  margin-bottom:1rem;
+
 }
 .comp_div>ul,.utility_div>ul{
   list-style-type:none;
   box-shadow: 0 .15rem 1.75rem 0 ;
   border-radius: 10px;
   padding:20px;
+  margin-bottom:1rem;
   background-color:white
 }
 .comp_div>ul>li button,.utility_div>ul>li button{
@@ -69,7 +86,7 @@
   font-size: .85rem;
   line-height:3;
 } */
-.navbar{
+.navbar_div{
   display: flex;
   align-items:baseline;
   justify-content:space-between;
@@ -77,13 +94,16 @@
   box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, 0.63);
   padding:8px 25px;
   margin-bottom:24px;
+  /* max-width: 74.91rem; */
+  width:100%;
+  min-width: 70.2rem;
 }
 .search_bar>input[type=search]{
   padding:.375rem 0.75rem;
   background-color:#f8f9fc;
   border:0;
 }
-.badge>ul{
+ .badge>ul{
   display:flex;
   align-items:center;
   list-style-type:none;
@@ -113,7 +133,7 @@
 .card>p{
 margin:0;
 }
-.card,.project_container,.spline_chart,.donut_chart,.Illustrations_container,.color_div,.devlopment_container{
+.card,.project_container,.spline_chart,.bar_chart,.donut_chart,.Illustrations_container,.color_div,.devlopment_container{
   padding:28px 20px;
   box-shadow: 0 .15rem 1.75rem 0 rgba(99, 96, 96, 0.548);
   border-radius:0.35rem;
@@ -264,6 +284,8 @@ font-size:20px;
   margin-right:16px;
   box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
   border-radius:0.35rem;
+  position:static;
+  bottom:0;
 }
 .footer>p{
   height:50px;
@@ -273,3 +295,121 @@ font-size:20px;
   font-size:12px;
   color:#858796;
 }
+.btn_header,.card_header{
+  margin-bottom:24px;
+}
+.circle-buttons h6{
+  margin-bottom:0.5rem;
+
+}
+.btn-circle {
+  border-radius: 100%;
+  /* height: 2.5rem; */
+  width: 2rem;
+  /* font-size: 1rem; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-right: 0.2rem;
+}
+
+.btn-circle.btn-sm{
+  border-radius: 50%;
+  width: 1.5rem;
+  margin-right: 0.3rem;
+}
+.btn-circle.btn-lg{
+  width:2.8rem;
+  border-radius:50%;
+  margin-right:0.2rem;
+}
+.split_btns,.split_btns_sm_lg,.google_fb_btns{
+  display:flex;
+  flex-direction: column;
+}
+.split_btns button,.split_btns_sm_lg button{
+  margin-bottom:0.75rem;
+  border:none;
+  border-radius: 5px;
+  padding: 0;
+}
+.split_btns span,.split_btns_sm_lg span{
+  float:left;
+}
+.split_btns .text,.split_btns_sm_lg .text{
+  padding:10px;
+}
+.split_btns .icon,.split_btns_sm_lg .icon{
+  background: rgba(0,0,0,.15);
+  padding: 10px;
+}
+.split_btns .fas,.fa-trash{
+  color:rgba(255,255,255,.5);
+}
+.brand-btn{
+  border:none;
+  border-radius: 0.35rem;
+  padding: 6px 12px;
+  margin-bottom:0.5rem;
+}
+.btn-google {
+  color: #fff;
+  background-color: #ea4335;
+  border-color: #fff;
+  
+}
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #fff;
+}
+
+.blank_div,.error_div{
+  min-height:45rem;
+  /* height:100% */
+
+}
+.side_bar_div li:last-child{
+  text-align: center;
+}
+#sidebarToggle:hover {
+    background-color: rgba(255,255,255,.25);
+}
+ #sidebarToggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.2);
+}
+#sidebarToggle::after {
+  font-weight: 900;
+  content: '\f104';
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 0.1rem;}
+
+  .mini_side_bar_div{
+    background-color: #4e73df;
+    width:150px;
+    height:100%;
+    min-height:663px;
+  }
+  .mini_side_bar_div>ul{
+    padding:2px;
+    margin-left:5px;
+  }
+  .mini_side_bar_div i{
+    margin-right:10px;
+    color: rgba(255,255,255,.3);
+  }
+  .mini_side_bar_div button:hover{
+    color:#f8f9fc;
+  }
+  .mini_side_bar_div li{
+    margin-bottom:25px;
+  }
+  .mini_side_bar_div li:last-child{
+    text-align: center;
+  }

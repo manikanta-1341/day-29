@@ -13,7 +13,7 @@ export default function Navbar (){
     const[menu_open, setMenu_open] = useState(false)
     return (
         <>
-        <div className="navbar">
+        <div className="navbar_div">
             <div className="search_bar">
                 <input type="search" name="search" placeholder="Search for..."/>
             </div>

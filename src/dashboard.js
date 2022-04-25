@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Grid, Button, LinearProgress, styled } from "@mui/material";
+import { Grid, Button} from "@mui/material";
 import Colors from "./colors";
 import Devlopment from "./devlopment";
 import Footer from "./footer";
